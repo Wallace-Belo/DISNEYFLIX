@@ -1,0 +1,122 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--preto);
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+/*==========Inicio header==========*/
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-family: "Arial Black";
+  font-size: 50px;
+}
+
+header .logo a {
+  color: var(--vermelho);
+  text-decoration: none;
+}
+
+header .logo a:hover {
+  text-decoration: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+/*==========Fim header========== */
+
+.container {
+  margin: 0px 15px;
+}
+
+/*==========Inicio main==========*/
+main .filmePrincipal .container {
+  width: 60%;
+  height: 100%;
+}
+
+.filmePrincipal {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/Proj/Images/capa-ds.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filmePrincipal .description {
+  justify-content: center;
+  text-align: left;
+  text-indent: 50px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0px 0px 15px 0px;
+}
+
+.title {
+  margin-top: 15%;
+  font-size: 40px;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 1px 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: var(--preto);
+}
+/*==========Fim main==========*/
+
+.boxfilm {
+  margin-top: 3%;
+  height: 100;
+  width: 100%;
+  display: flex;
+}
+
+footer {
+  color: #fff;
+  font-family: sans-serif;
+}
